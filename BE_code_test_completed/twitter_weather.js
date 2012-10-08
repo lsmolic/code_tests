@@ -1,3 +1,11 @@
+/*
+	This is an example script. It was constructed using the object literal pattern.
+
+	Port this script to various back-end scripting languages. 
+
+*/
+
+
 var TW = TW || {};
 
 TW.Config = {
@@ -11,8 +19,10 @@ TW.Config = {
 TW.Twitter = {
 	GetProfile : function(profile_name)
 	{
+		//extra params that define required format of jsonp and callback function
 		var url_parameters = "output=jsonp&callback=TW.Twitter.HandleResponse";
 
+		//work around for cross-domain issue, placing script tag on to page.
 		var scriptTag = document.createElement('SCRIPT');
 		scriptTag.src = TW.Config.TWITTER_API_URL + "/" + profile_name + ".json?" + url_parameters;
 		scriptTag.id = "twitter_response";
@@ -24,6 +34,7 @@ TW.Twitter = {
 		element = document.getElementById("twitter_response");
 		element.parentNode.removeChild(element);
 
+		//
 		var user_location = TW.Twitter.GetLocation(json_response);
 		if(user_location != null)
 		{

@@ -1,4 +1,13 @@
 <?
+/*
+	Attention! Oy! Achtung! 
+
+	This PHP script should be written within a namespace to protect it from interfering with other scripts. Please follow a similar structure to the javascript example, but do not worry about attempting asynchronous web calls. 
+
+	It is important to use current PHP5 standards and avoid globals whenever possible. The script will take an optional	commandline argument profile_name, which will replace the default 'TheScienceGuy'. Since Twitter has a problem requiring this field to be standardized, we chose one with "Los Angeles, CA, USA", thanks Bill Nye.
+
+*/
+
 
 namespace TW
 {
@@ -14,9 +23,10 @@ namespace TW
 	{
 		public static function getUrl($url)
 		{
+			// use curl to pull down the twitter json
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);  //no ssl
 			$output = curl_exec($ch);
 			curl_close($ch); 
 			return $output;

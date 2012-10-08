@@ -9,13 +9,13 @@ You are being asked to port code from one language to another. Actually several 
 4. An output of the Weather for the location of the Twitter profile name passed to the original function (method). 
 5. Output should look like this:
 
-###########  (not with the hashes)
-#
-# 	Weather as of: Last Updated on October 8, 12:27 AM PDT 
-# 	Conditions: Clear 
-# 	Temperature: 61.8 
-#
-###########
+###########  (hashes not necessary) #########################
+#															#
+# 	Weather as of: Last Updated on October 8, 12:27 AM PDT  #
+# 	Conditions: Clear 										#
+# 	Temperature: 61.8 										#
+#															#
+#############################################################
 
 This is not a complicated exercise, but it demonstrates the following abilities:
 - Can use Google.

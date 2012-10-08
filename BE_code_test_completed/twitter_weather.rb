@@ -1,5 +1,16 @@
 #!/usr/bin/env ruby
 
+=begin
+	This ruby script is intended to be built using version 1.9.2+. That will give you all the required libraries to port the code
+	from javascript. It can be built without any additional gems. Please follow a similar structure to the javascript example, 
+	but do not worry about attempting asynchronous web calls. 
+
+	The script will take an optional commandline argument profile_name, which will replace the default 'TheScienceGuy'. 
+	Since Twitter has a problem requiring this field to be standardized, we chose one with "Los Angeles, CA, USA", thanks Bill Nye.
+=end
+
+
+
 require 'net/http'
 require 'uri'
 require 'json'
@@ -14,6 +25,8 @@ module TW
 
 	class Util
 		def self.get_url(url)
+			#changed the script to pull http, not over ssl, because there is a bug in Net::HTTP
+			#http://expressica.com/2012/02/10/eoferror-end-of-file-reached-issue-when-post-a-form-with-nethttp/
 			response = Net::HTTP.get(URI.parse(url))
 			return response
 		end
