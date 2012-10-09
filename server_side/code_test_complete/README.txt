@@ -10,11 +10,11 @@ You are being asked to port code from one language to another. Actually several 
 5. Output should look like this:
 
 ###########  (hashes not necessary) #########################
-#															#
-# 	Weather as of: Last Updated on October 8, 12:27 AM PDT  #
-# 	Conditions: Clear 										#
-# 	Temperature: 61.8 										#
-#															#
+#															
+# 	Weather as of: Last Updated on October 8, 12:27 AM PDT  
+# 	Conditions: Clear 										
+# 	Temperature: 61.8 										
+#															
 #############################################################
 
 This is not a complicated exercise, but it demonstrates the following abilities:
