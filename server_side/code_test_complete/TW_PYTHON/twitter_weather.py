@@ -2,6 +2,7 @@
 
 import urllib2
 import json
+import sys
 
 class TW:
 	class Config:
@@ -53,9 +54,12 @@ class TW:
 
 			print "\n\n Weather as of: " + last_observation + "\n Conditions: " + conditions + "\n Temperature: " + temperature + "\n\n"
 
+profile_name = "TheScienceGuy"
+if (len(sys.argv) > 1): 
+	profile_name = sys.argv[1]
 
 twitter = TW.Twitter()
-profile_json = twitter.GetProfile( "TheScienceGuy" )
+profile_json = twitter.GetProfile( profile_name )
 location = twitter.GetLocation(profile_json)
 
 weather = TW.Weather()
