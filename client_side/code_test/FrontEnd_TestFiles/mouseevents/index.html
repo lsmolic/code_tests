@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Mouse Events RSS</title>
+  <link href="../common/reset.css" rel="stylesheet" type="text/css" />
+  <link href="style/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/JavaScript">  
+  $(document).ready(function(){  
+    loadExternalPage();
+  });  
+  
+  //bind header as clickable element
+  $('.clickHeader').click(
+  	function()
+	{
+		slideContent(this);
+	}
+  );
+  
+  function loadExternalPage()  {
+	$("#loadDisplay").load("external.html");
+  }
+  
+  
+  function slideContent(element)  {
+	$(element).next().slideToggle('slow');
+  }
+  
+  </script>
+  </head>
+
+  <body>
+  <div id="loadDisplay"> </div>
+</body>
+</html>

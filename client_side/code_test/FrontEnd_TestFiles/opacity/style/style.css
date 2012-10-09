@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body  {
+	background:url(../images/background.gif) repeat-x #fff;
+}
+
+.textBox {
+	background-color:#0CF;
+	width:  50%;
+	margin:  0 auto 0;
+	padding:  15px;
+}
+
+.textBox > p {
+	font-family:  Arial, Helvetica, sans-serif;
+	margin-bottom:  1em;
+}
+
+.textBox > p:last-child  {
+	margin-bottom:  0.5em;
+}
+

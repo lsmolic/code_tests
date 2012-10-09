@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.textBox {
+	background-color:  #999;
+	width:  50%;
+	margin:  15% auto 0;
+	padding:  15px;
+}
+
+.textBox > p {
+	color:#fff;
+	font-family:  Arial, Helvetica, sans-serif;
+	margin-bottom:  1em;
+}
+
+.textBox > p:last-child  {
+	margin-bottom:  0.5em;
+}

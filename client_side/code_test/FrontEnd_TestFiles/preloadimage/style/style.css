@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.spriteBox {
+	background-color:  #999;
+	width:  800px;
+	margin:  20px auto 0;
+	padding:  15px;
+	height:  394px;
+}

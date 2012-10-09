@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#loadDisplay  {
+	width:600px;
+	margin:20px auto 0;
+	padding:  10px;
+	border: 1px solid #CCC;	
+}
+
+h1, p  {
+	font-family:Arial, Helvetica, sans-serif;	
+}
+
+h1  {
+	font-size:2.4em;	
+	margin: 0.2em 0 0.2em;
+	cursor:pointer;
+	border-bottom:1px solid #CCC;
+}
+
+h1:hover {
+	color:#666;	
+}
+
+p  {
+	font-size:0.8em;
+	line-height: 1.6em;
+	margin-bottom:  1em;
+}
+
+.hiddenText {
+	display:  none;
+}
