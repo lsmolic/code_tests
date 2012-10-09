@@ -15,7 +15,7 @@ new_dir="#{current_dir}/../../code_test"
 `rm -rf #{new_dir}/TW_JAVA/*.class`
 
 ### REMOVE OTHER FILES ###
-`rm -f #{new_dir}/ADMIN_README`
+`rm -f #{new_dir}/ADMIN_README.txt`
 `rm -f #{new_dir}/.gitignore`
 `rm -f #{new_dir}/prepare.rb`
 
