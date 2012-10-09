@@ -5,19 +5,13 @@ The point of this test is to determine how well a person can adapt to knew langu
 and limitaitons. It does not test for polymorphism, although that could be added in the future if necessary.
 
 Creating the test:
-1. duplicate the root folder
-2. remove all code below the comment block in the following files
-	- twitter_weather.php
-	- twitter_weather.rb
-	- twitter_weather.sh
-	- twitter_weather.java
-3. "rm -rf *.class" in the TW_JAVA directory
-3. delete the ADMIN_README
-4. test that the javascript works
+1. run 'ruby prepare.rb' from this directory
+2. cd ../../code_test
+4. test that the javascript works in TW_JAVASCRIPT
 	- open index.html in a browser
 	- you should see the current weather for Los Angeles, CA
 5. zip the new folder with removed pieces, all set to go!
 
 Judging the test:
 - how well were they able to resourcefully build these classes
-- ruby is by far the easiest, php is a little more archane and bash should almost be considered torture (hence the use of ticktick.sh)
+- ruby is by far the easiest, php is a little more archane, java is compiled and there for more difficult for those who have not used a compiled language and bash should almost be considered torture (hence the use of ticktick.sh)
