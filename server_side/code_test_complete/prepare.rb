@@ -4,12 +4,12 @@ current_dir = Dir.pwd
 
 ### REMOVE EXISTING TEST COPY IF EXISTS ###
 
-`rm -rf #{current_dir}/../../code_test`
+`rm -rf #{current_dir}/../code_test`
 
 ### DUPLICATE FOLDER ###
-`cp -R #{current_dir} #{current_dir}/../../code_test`
+`cp -R #{current_dir} #{current_dir}/../code_test`
 
-new_dir="#{current_dir}/../../code_test"
+new_dir="#{current_dir}/../code_test"
 
 ### REMOVE JAVA COMPILED FILES ###
 `rm -rf #{new_dir}/TW_JAVA/*.class`
@@ -63,6 +63,7 @@ File.open("#{new_dir}/TW_PHP/twitter_weather.php", 'w') {|f| f.write(php_comment
 
 
 bash_comment = "
+#!/usr/bin/env bash
 :<<BASHComment
 
 	This is undoubtedly the most difficult of all the scripts because you are limited by the language. You may use the ticktick.sh script provided to build the script, but do no include any other external code.
