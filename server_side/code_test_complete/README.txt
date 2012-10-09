@@ -3,8 +3,8 @@
 Preparation:
 You are being asked to port code from one language to another. Actually several others. The javascript version has been completed for you. The basic parts are as follows:
 
-1. A function (method) that takes a twitter profile name.
-2. A class that handles calling the Twitter API
+1. A function (method) that takes a twitter profile name. ( (default: "TheScienceGuy"), but you can pass "awsmsce" or "MinneapolisFed" )
+2. A class that handles calling the Twitter API 
 3. A class that handles calling the Wunderground API (key is provided)
 4. An output of the Weather for the location of the Twitter profile name passed to the original function (method). 
 5. Output should look like this:

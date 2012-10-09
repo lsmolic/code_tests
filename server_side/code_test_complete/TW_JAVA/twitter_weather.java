@@ -114,9 +114,21 @@ public class twitter_weather
 { 
    	public static void main(String[] args) 
    	{ 
+   		String profile_name = "TheScienceGuy";
+   		if (args.length > 0) 
+   		{
+			try
+			{
+				profile_name = (String)(args[0]);
+			} catch (Exception e){
+				System.out.println(e.getMessage());
+			}
+
+   		}
+
    		TW tw = new TW();
         TW.Twitter twitter = tw.new Twitter();
-        JSONObject profile_json = twitter.GetProfile("TheScienceGuy");
+        JSONObject profile_json = twitter.GetProfile(profile_name);
         String location = twitter.GetLocation(profile_json);
 
         TW.Weather weather = tw.new Weather();

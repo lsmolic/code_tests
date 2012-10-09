@@ -66,8 +66,22 @@ bash_comment = "
 #!/usr/bin/env bash
 :<<BASHComment
 
-	This is undoubtedly the most difficult of all the scripts because you are limited by the language. You may use the ticktick.sh script provided to build the script, but do no include any other external code.
+This is undoubtedly the most difficult of all the scripts because you are limited by the language. You may use the ticktick.sh script provided to build the script, but do no include any other external code.
 	
 BASHComment 
 "
 File.open("#{new_dir}/TW_BASH/twitter_weather.sh", 'w') {|f| f.write(bash_comment) }
+
+
+
+python_comment = "
+#!/usr/bin/python
+'''
+
+Using Python, version 2.6+, you will not need to install any extra libraries to accomplish this test. Please follow a similar structure to the javascript example, but do not worry about attempting asynchronous web calls. 
+	
+'''
+"
+File.open("#{new_dir}/TW_PYTHON/twitter_weather.py", 'w') {|f| f.write(python_comment) }
+
+
