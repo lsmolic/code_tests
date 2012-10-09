@@ -75,7 +75,7 @@ TW.Weather = {
 	AlertWeather : function(json_response)
 	{
 		var conditions = json_response.current_observation.weather;
-		var temperature = json_response.current_observation.temp_f + "f";
+		var temperature = json_response.current_observation.temperature_string;
 		var last_observation = json_response.current_observation.observation_time;
 
 		alert("Weather as of: "+ last_observation 

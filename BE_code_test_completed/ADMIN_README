@@ -10,6 +10,8 @@ Creating the test:
 	- twitter_weather.php
 	- twitter_weather.rb
 	- twitter_weather.sh
+	- twitter_weather.java
+3. "rm -rf *.class" in the TW_JAVA directory
 3. delete the ADMIN_README
 4. test that the javascript works
 	- open index.html in a browser

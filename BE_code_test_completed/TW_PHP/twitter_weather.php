@@ -71,7 +71,7 @@ namespace TW
 		public function printWeather($json_response)
 		{
 			$conditions = $json_response['current_observation']['weather'];
-			$temperature = $json_response['current_observation']['temp_f'] . "f";
+			$temperature = $json_response['current_observation']['temperature_string'];
 			$last_observation = $json_response['current_observation']['observation_time'];
 
 			printf("\n\n Weather as of: %s \n Conditions: %s \n Temperature: %s \n\n", $last_observation, $conditions, $temperature );

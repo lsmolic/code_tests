@@ -1,16 +1,5 @@
 #!/usr/bin/env ruby
 
-=begin
-	This ruby script is intended to be built using version 1.9.2+. That will give you all the required libraries to port the code
-	from javascript. It can be built without any additional gems. Please follow a similar structure to the javascript example, 
-	but do not worry about attempting asynchronous web calls. 
-
-	The script will take an optional commandline argument profile_name, which will replace the default 'TheScienceGuy'. 
-	Since Twitter has a problem requiring this field to be standardized, we chose one with "Los Angeles, CA, USA", thanks Bill Nye.
-=end
-
-
-
 require 'net/http'
 require 'uri'
 require 'json'
@@ -61,7 +50,7 @@ module TW
 
 		def print_weather(json_response)
 			conditions = json_response["current_observation"]["weather"]
-			temperature = "#{json_response['current_observation']['temp_f']} f"
+			temperature = json_response["current_observation"]["temperature_string"]
 			last_observation = json_response["current_observation"]["observation_time"]
 
 			puts "\n\n Weather as of: #{last_observation} \n Conditions: #{conditions} \n Temperature: #{temperature} \n\n"

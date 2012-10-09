@@ -26,7 +26,7 @@ function get_weather()
 	weather_data=`curl -s "${WEATHER_API_URL}/${state}/${city}.json"`
 	tickParse "$weather_data"
 	conditions=``current_observation.weather``
-	temperature=``current_observation.temp_f``
+	temperature=``current_observation.temperature_string``
 	last_observation=``current_observation.observation_time``
 }
 
