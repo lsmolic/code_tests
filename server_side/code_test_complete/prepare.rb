@@ -85,3 +85,23 @@ Using Python, version 2.6+, you will not need to install any extra libraries to 
 File.open("#{new_dir}/TW_PYTHON/twitter_weather.py", 'w') {|f| f.write(python_comment) }
 
 
+
+csharp_comment = "
+/*
+
+You will need to make sure mono 2.6+ is installed to write this test. Please follow a similar structure to the javascript example, but do not worry about attempting asynchronous web calls. 
+
+This is intented to be compiled with the gmcs and using a target framework of 2. The fastJSON library has been included to avoid you dealing with deserialization yourself. Since the syntax is more important than looking this up: http://fastjson.codeplex.com/
+
+Here are the two commands you will need ( assuming you are in ./TW_CSHARP/ ):
+
+COMPILE: gmcs -r:./fastJSON.dll twitter_weather.cs
+
+EXECUTE: mono twitter_weather.exe
+
+
+*/
+"
+File.open("#{new_dir}/TW_CSHARP/twitter_weather.cs", 'w') {|f| f.write(csharp_comment) }
+
+

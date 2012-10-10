@@ -33,11 +33,9 @@ namespace TW
 	{
 	    public function getProfile($profile_name) 
 	    {
-	        $twitter_url = Config::TWITTER_API_URL."/$profile_name.json";
-
-			$json_response = Util::getUrl($twitter_url);
-
-			return Util::processJsonResponse($json_response);
+	      $twitter_url = Config::TWITTER_API_URL."/$profile_name.json";
+				$json_response = Util::getUrl($twitter_url);
+				return Util::processJsonResponse($json_response);
 	    }
 
 	    public function getLocation($json_profile)
