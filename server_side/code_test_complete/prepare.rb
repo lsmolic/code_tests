@@ -42,6 +42,13 @@ Dont worry about finding any external libraries. We have provided JSON-Simple cl
 Because this is not a runtime language, run javac to compile the twitter_weather.java file and then (java twitter_weather) to execute the twitter_weather class. 
 	
 One important note: please provided a nested class to namespace the classes, just keeping with our previous examples. And make your public class named twitter_weather so it matches the filename.
+
+Here are the two commands you will need ( assuming you are in ./TW_JAVA/ ):
+
+COMPILE: javac twitter_weather.java
+
+EXECUTE: java twitter_weather (optional TwitterHandler)
+
 */
 	"
 File.open("#{new_dir}/TW_JAVA/twitter_weather.java", 'w') {|f| f.write(java_comment) }
@@ -97,7 +104,7 @@ Here are the two commands you will need ( assuming you are in ./TW_CSHARP/ ):
 
 COMPILE: gmcs -r:./fastJSON.dll twitter_weather.cs
 
-EXECUTE: mono twitter_weather.exe
+EXECUTE: mono twitter_weather.exe (optional TwitterHandler)
 
 
 */
