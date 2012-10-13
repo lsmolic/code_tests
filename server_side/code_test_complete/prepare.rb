@@ -16,7 +16,7 @@ new_dir="#{current_dir}/../code_test"
 
 ### REMOVE OTHER FILES ###
 `rm -f #{new_dir}/ADMIN_README.txt`
-`rm -f #{new_dir}/.gitignore`
+`rm -rf #{new_dir}/**/.gitignore`
 `rm -f #{new_dir}/prepare.rb`
 
 ### INSERT COMMENT BLOCKS

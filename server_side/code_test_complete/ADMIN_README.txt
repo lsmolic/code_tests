@@ -15,3 +15,16 @@ Creating the test:
 Judging the test:
 - how well were they able to resourcefully build these classes
 - ruby is by far the easiest, php is a little more archane, java is compiled and there for more difficult for those who have not used a compiled language and bash should almost be considered torture (hence the use of ticktick.sh)
+
+
+
+
+
+
+
+
+
+fastJSON help links:
+http://stackoverflow.com/questions/8512142/how-to-include-libraries-such-as-fastjson-in-a-c-sharp-gmcs-project
+http://fastjson.codeplex.com/
+http://65.39.148.52/Articles/159450/fastJSON
